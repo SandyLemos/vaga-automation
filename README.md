@@ -160,3 +160,13 @@ Os testes cobrem normalização de espaços e quebras de linha, Unicode/HTML, li
 ## Integração com n8n
 
 O n8n pode chamar `POST /analisar-vaga`, enviando a descrição no campo `descricao_vaga`. O pré-processamento e a análise são internos à API; o formato de entrada e a estrutura da resposta permanecem definidos pelo backend.
+
+## 🚧 Em andamento
+
+- Automação do fluxo com n8n.
+- Testes e validação da integração.
+- Documentação do projeto.
+- Organização das evidências.
+- Preparação dos materiais de entrega.
+
+> Em breve, novas atualizações, evidências e materiais de entrega serão lançados.
