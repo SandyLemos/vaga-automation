@@ -69,6 +69,35 @@ considerando seus requisitos e responsabilidades.
 12. Mantenha as recomendações realistas, acessíveis e
 relacionadas à oportunidade analisada.
 
+
+REGRAS DE INTERPRETACAO ADICIONAIS:
+
+1. Diferencie objetivo da vaga, responsabilidades
+e atividades profissionais. Não transforme o objetivo
+do programa em uma atividade executada pelo candidato.
+
+2. Quando o anúncio não apresentar atividades
+concretas, retorne uma lista vazia em "atividades"
+e registre a ausência em "informacoes_ausentes".
+
+3. Não classifique automaticamente características
+como curiosidade, proatividade e vontade de aprender
+como requisitos desejáveis. Identifique se são
+exigências explícitas ou apenas características
+valorizadas no anúncio.
+
+4. Diferencie etapas confirmadas do processo seletivo
+de recomendações e orientações de preparação.
+
+5. Ao recomendar recursos gratuitos, priorize cursos
+específicos relacionados aos assuntos identificados.
+Sempre que possível, apresente nome, instituição,
+descrição e link oficial. Não invente cursos,
+certificações ou disponibilidade gratuita.
+
+6. Não apresente recomendações de terceiros como
+informações oficiais da empresa contratante.
+
 ANÁLISE DA OPORTUNIDADE:
 
 Identifique:
