@@ -1,27 +1,26 @@
-import os
+from app.services.gemini_service import analisar_vaga
 
-from dotenv import load_dotenv
-from google import genai
+descricao = """
+Vaga: Analista de Suporte Técnico Jr.
+Empresa: Omie
 
-# Carrega as variáveis do arquivo .env
-load_dotenv()
+Responsabilidades:
+- Prestar suporte técnico aos clientes.
+- Investigar problemas relatados pelos usuários.
+- Auxiliar na resolução de dúvidas sobre o sistema.
 
-# Recupera as configurações
-API_KEY = os.getenv("GEMINI_API_KEY")
-MODEL = os.getenv("GEMINI_MODEL")
+Requisitos:
+- Conhecimentos básicos em informática.
+- Boa comunicação.
+- Capacidade de solucionar problemas.
 
-# Verifica se as configurações existem
-if not API_KEY or not MODEL:
-    raise ValueError("Configure GEMINI_API_KEY e GEMINI_MODEL no .env")
+Benefícios e salário: não informados.
+"""
 
-# Cria o cliente Gemini
-client = genai.Client(api_key=API_KEY)
+resultado = analisar_vaga(descricao)
 
-# Envia uma solicitação simples
-response = client.interactions.create(
-    model=MODEL, input="Responda apenas com a palavra: CONECTADO"
-)
+print("\nModelo utilizado:")
+print(resultado["modelo_utilizado"])
 
-# Exibe a resposta
-print("Resposta do Gemini:")
-print(response.output_text)
+print("\nAnálise gerada:")
+print(resultado["analise"])
